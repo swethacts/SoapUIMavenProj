@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="20c741f3-8342-4395-96bf-9c9b5c0bb0e7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="LatLonListCityNames TestCase" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testStep type="request" id="bf484135-8a80-41b0-82c2-de8521291bd8" name="LatLonListCityNames"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ndfdXMLBinding</con:interface><con:operation>LatLonListCityNames</con:operation><con:request name="LatLonListCityNames" id="542973ab-7d9e-431a-b807-cd42f75647de"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://graphical.weather.gov:443/xml/SOAP_server/ndfdXMLserver.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ndf="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ndf:LatLonListCityNames soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">\r
+         <displayLevel xsi:type="xsd:integer">?</displayLevel>\r
+      </ndf:LatLonListCityNames>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListCityNames" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase>
