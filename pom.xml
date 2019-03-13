@@ -40,28 +40,23 @@
         <artifactId>soapui-maven-plugin</artifactId>
         <version>4.6.1</version>
       
-            <executions>
-                  <execution>
-                       <id>EMIF-archive</id>
-                       <configuration>
-
-                           <projectFile>LatLonListCityNames-TestCase.xml</projectFile>
-
-                           <outputFolder>target/surefire-reports</outputFolder>
+            <configuration>
+            <projectFile>LatLonListCityNames-TestCase.xml</projectFile>
+                   <outputFolder>target/surefire-reports</outputFolder>
 
                           
                            <junitReport>true</junitReport>
                            <exportAll>true</exportAll>
                            <printReport>true</printReport>
                            <testFailIgnore>true</testFailIgnore>
-                       </configuration>
-                       <goals>
-                           <goal>test</goal>
-                       </goals>
-                       <phase>test</phase>
-                   </execution>
-
-                    
+        </configuration>
+         <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
                 </executions>
         
     </plugin>
