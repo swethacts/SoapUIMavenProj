@@ -41,7 +41,7 @@
         <version>4.6.1</version>
       
             <configuration>
-            <projectFile>global-weather-soapui-project.xml</projectFile>
+            <projectFile>sample-soapui-proj.xml</projectFile>
                    <outputFolder>target/surefire-reports</outputFolder>
 
                           
