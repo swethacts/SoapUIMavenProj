@@ -3,7 +3,7 @@ pipeline {
   agent {
         docker {
             image 'maven:3-alpine'
-          //  args '-v $HOME/.m2:/root/.m2'
+            args '-v $HOME/.m2:/root/.m2'
         }
     }
 
@@ -12,11 +12,11 @@ pipeline {
     stage('Test') {
 
       steps{
+        parallel(
+          sh 'mvn --version'
 
-        sh 'mvn --version'
-
-        sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
-
+          sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
+        )
       }
 
     }
@@ -24,7 +24,7 @@ pipeline {
     stage('Results') {
 
       steps{
-
+  
         junit '**/target/*.xml'
 
         archive 'target/*'
