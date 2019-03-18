@@ -12,8 +12,10 @@ pipeline {
     stage('Test') {
 
       steps{
+       
+        sh 'mvn --version'
+       
         parallel(
-          sh 'mvn --version'
 
           sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
         )
