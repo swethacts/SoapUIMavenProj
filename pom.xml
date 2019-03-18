@@ -42,7 +42,7 @@
       
             <configuration>
             <projectFile>global-weather-soapui-project.xml</projectFile>
-                   <outputFolder>target/surefire-reports</outputFolder>
+                   <outputFolder>${project.build.directory}/reports</outputFolder>
 
                           
                            <junitReport>true</junitReport>
