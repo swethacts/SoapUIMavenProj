@@ -41,7 +41,7 @@
         <version>4.6.1</version>
       
             <configuration>
-            <projectFile>sample-soapui-proj.xml</projectFile>
+            <projectFile>soapui-maven-example.xml</projectFile>
                    <outputFolder>target/surefire-reports</outputFolder>
 
                           
