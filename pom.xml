@@ -41,7 +41,7 @@
         <version>4.6.1</version>
       
             <configuration>
-            <projectFile>LatLonListCityNames-TestCase.xml</projectFile>
+            <projectFile>global-weather-soapui-project.xml</projectFile>
                    <outputFolder>target/surefire-reports</outputFolder>
 
                           
