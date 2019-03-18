@@ -25,7 +25,7 @@ pipeline {
 
       steps{
 
-        junit '**/target/soapui/TEST-*.xml'
+        junit '**/target/*.xml'
 
         archive 'target/*'
 
