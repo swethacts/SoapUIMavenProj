@@ -41,9 +41,8 @@
         <version>5.5.0</version>
       
             <configuration>
-          <!--  <projectFile>global-weather-soapui-project.xml</projectFile>  -->
-               <projectFile>CountryInfoService-soapui-project.xml</projectFile>
-              
+                   <projectFile>global-weather-soapui-project.xml</projectFile>  
+                 
                    <outputFolder>${basedir}/target</outputFolder>
 
                           
