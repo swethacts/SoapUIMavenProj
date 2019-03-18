@@ -14,11 +14,9 @@ pipeline {
       steps{
        
         sh 'mvn --version'
-       
-        parallel(
 
-          sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
-        )
+        sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
+        
       }
 
     }
