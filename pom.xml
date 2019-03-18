@@ -49,7 +49,7 @@
                            <junitReport>true</junitReport>
                            <exportAll>true</exportAll>
                            <printReport>true</printReport>
-                           <testFailIgnore>true</testFailIgnore>
+                        <!--   <testFailIgnore>true</testFailIgnore>   -->
         </configuration>
          <executions>
                     <execution>
