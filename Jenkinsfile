@@ -12,8 +12,7 @@ pipeline {
     stage('Test') {
 
       steps{
-       slackSend "Build Started - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
-		slackSend "Docker Container Created"
+     
         sh 'mvn --version'
 
         sh 'mvn clean com.smartbear.soapui:soapui-maven-plugin:test'
@@ -30,8 +29,7 @@ pipeline {
 
         archive 'target/*'
        sh 'echo "bye-world"'
-		slackSend "Docker Container Destroyed"
-		slackSend "Build Completed - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+		
 
       }
 
